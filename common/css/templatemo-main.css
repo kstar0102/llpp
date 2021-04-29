@@ -149,10 +149,8 @@ a:hover {
   width: 100%;
   z-index: -1;
   filter: grayscale(100%);
-  
-
 }
-.img-active{
+.img-active {
   filter: grayscale(0%);
   transition: all 2s ease;
 }
@@ -197,7 +195,7 @@ a:hover {
 }
 
 .service-content {
-  margin-top: 100vh;
+  margin-top: 66%;
   padding-left: 15px;
   padding-right: 15px;
   /* padding-top: 14.745vh; */
@@ -285,7 +283,6 @@ img {
   margin: auto;
 }
 
-
 .cursor {
   cursor: pointer;
 }
@@ -305,7 +302,7 @@ img {
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
-  transition: font-size .8s;
+  transition: font-size 0.8s;
 }
 
 .next {
@@ -316,7 +313,7 @@ img {
 .prev:hover,
 .next:hover {
   font-size: 2.5vw;
-  transition: all .8s;
+  transition: all 0.8s;
 }
 
 .numbertext {
@@ -359,9 +356,107 @@ img {
   margin-left: 17%;
   width: 76%;
 }
+.slide-sp{
+  margin-left: 17%;
+  width: 76%;
+}
 .slide-row {
   flex-wrap: wrap;
   display: flex;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab:100);
+
+.animate {
+  transition: transform 0.3s ease-out;
+}
+
+.myslider-wrap {
+  width: 300px;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  margin-left: -150px;
+  top: 50%;
+  margin-top: -225px;
+}
+
+.myslider {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.ms-touch.myslider {
+  overflow-x: scroll;
+  overflow-y: hidden;
+
+  -ms-overflow-style: none;
+  /* Hides the scrollbar. */
+
+  -ms-scroll-chaining: none;
+  /* Prevents Metro from swiping to the next tab or app. */
+
+  -ms-scroll-snap-type: mandatory;
+  /* Forces a snap scroll behavior on your images. */
+
+  -ms-scroll-snap-points-x: snapInterval(0%, 100%);
+  /* Defines the y and x intervals to snap to when scrolling. */
+}
+
+.holder {
+  width: 300%;
+  max-height: 500px;
+  height: 100%;
+  overflow-y: hidden;
+}
+
+.myslide-wrapper {
+  width: 33.333%;
+  height: 100%;
+  float: left;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.myslide {
+  height: 100%;
+  position: relative;
+}
+
+.temp {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  font-size: 100px;
+  bottom: 15px;
+  left: 15px;
+  font-family: "Josefin Slab", serif;
+  font-weight: 100;
+}
+
+.myslide img {
+  position: absolute;
+  z-index: 0;
+  transform: translatex(-100px);
+}
+
+.myslide:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(transparent, black);
+}
+
+.myslide div {
+  width: 300px;
+  height: 500px;
+  z-index: 0;
 }
 
 .projects-content {
@@ -370,6 +465,14 @@ img {
   margin: auto;
   position: relative;
   opacity: 0;
+}
+.touch-slide {
+  background-color: #3e3a39;
+  width: 81.97%;
+  margin: auto;
+  position: relative;
+  opacity: 1;
+  display: none;
 }
 
 .projects-content .item img {
@@ -501,7 +604,6 @@ section {
   border: 4px solid #ff7d27;
 }
 
-
 .tabgroup p {
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
@@ -518,7 +620,7 @@ section {
   background-color: #3e3a39;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top:2%;
+  padding-top: 2%;
 }
 
 .contact-form {
@@ -577,11 +679,17 @@ section {
   margin-bottom: 30px;
   margin: auto;
   height: auto;
-  width: 1250px;
+  max-width: 1250px;
+  width: 100%;
 }
-#myIframe{
+#myIframe {
   width: 100%;
   height: 700px;
+}
+@media (max-width: 1250px) {
+  #myIframe {
+    height: 30vh;
+  }
 }
 
 footer {
@@ -590,22 +698,22 @@ footer {
   background-color: #3e3a39;
   opacity: 0;
 }
-footer img{
+footer img {
   width: 10.86vw;
 }
-footer span{
+footer span {
   color: #959595;
   font-family: tbchibirgothicplusk-pro;
   font-size: 0.859vw;
   letter-spacing: 1.5px;
 }
-footer a img{
+footer a img {
   width: 2vw;
 }
 
-footer .social{
+footer .social {
   margin-top: 3%;
-  letter-spacing:18px;
+  letter-spacing: 18px;
   margin-bottom: 1.6%;
 }
 
@@ -658,7 +766,7 @@ footer em {
   font-style: normal;
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .baner-content {
     padding-top: 30vh;
   }
@@ -707,10 +815,9 @@ footer em {
   .container {
     max-width: 1170px;
   }
-}
+} */
 
 /* LIGHT BOX */
-
 
 body.lb-disable-scrolling {
   overflow: hidden;
@@ -913,4 +1020,54 @@ body.lb-disable-scrolling {
   cursor: pointer;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
+}
+@media (max-width: 480px) {
+  .text-center img {
+    width: 25.1011vw;
+  }
+  .summer-text {
+    letter-spacing: 4px;
+    font-size: 3.8333vw;
+  }
+  .myslide-sp{
+    display: block;
+  }
+  .slide {
+    display: none;
+  }
+  .slide-sp{
+    display: block;
+  }
+  .touch-slide {
+    margin-top: -10px;
+    display: block;
+    opacity: 0;
+  }
+  .projects-content {
+    display: none;
+  }
+  .tabs-content .large-wh {
+    font-size: 2.773vw;
+  }
+  .tabs-content .small-wh {
+    font-size: 1.631vw;
+  }
+  .tabs-content .small-gr {
+    font-size: 1.631vw;
+  }
+  .tabs-content .normal-wh {
+    font-size: 1.914vw;
+  }
+  footer img {
+    width: 15.86vw;
+  }
+  footer .social {
+    letter-spacing: 10px;
+  }
+  footer a img {
+    width: 4vw;
+  }
+  footer span {
+    font-size: 1.159vw;
+  }
 }

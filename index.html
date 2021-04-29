@@ -14,6 +14,12 @@
     <link rel="stylesheet" href="common/css/hero-slider.css">
     <link rel="stylesheet" href="common/css/templatemo-main.css">
     <link rel="stylesheet" href="common/css/owl-carousel.css">
+    <style>
+        .siema {
+            margin: 1rem 0;
+        }
+    </style>
+
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
     <script>
@@ -39,7 +45,7 @@
 
 <body onload="load()">
     <div class="content-1">
-        <img src="./images/index.html.jpg" width="100%" alt="">
+        <img src="./images/index.html.png" width="100%" alt="">
     </div>
     <div class="service-content" id="services">
         <div class="text-center"><img src="./images/logo.png" alt=""></div>
@@ -109,7 +115,53 @@
                 </div>
             </div>
         </div>
+        <div class="touch-slide">
+            <div class="siema">
+                <div class="myslide-sp"><img src="./images/01.jpg" alt="Siema image" /></div>
+                <div class="myslide-sp"><img src="./images/02.jpg" alt="Siema image" /></div>
+                <div class="myslide-sp"><img src="./images/03.jpg" alt="Siema image" /></div>
+                <div class="myslide-sp"><img src="./images/04.jpg" alt="Siema image" /></div>
+                <div class="myslide-sp"><img src="./images/05.jpg" alt="Siema image" /></div>
+                <div class="myslide-sp"><img src="./images/06.jpg" alt="Siema image" /></div>
+                <div class="myslide-sp"><img src="./images/07.jpg" alt="Siema image" /></div>
+
+            </div>
+            <div class="slide-sp">
+                <div class="slide-row">
+                    <div class="column">
+                        <img class="demo cursor" src="./images/01.jpg" style="width:100%" onclick="currentSlideSp(1)"
+                            alt="The Inside">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./images/02.jpg" style="width:100%" onclick="currentSlideSp(2)"
+                            alt="The Inside">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./images/03.jpg" style="width:100%" onclick="currentSlideSp(3)"
+                            alt="The Inside">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./images/04.jpg" style="width:100%" onclick="currentSlideSp(4)"
+                            alt="The Inside">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./images/05.jpg" style="width:100%" onclick="currentSlideSp(5)"
+                            alt="The Inside">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./images/06.jpg" style="width:100%" onclick="currentSlideSp(6)"
+                            alt="The Inside">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./images/07.jpg" style="width:100%" onclick="currentSlideSp(7)"
+                            alt="The Inside">
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
+
     <div class="tabs-content text-center" id="our-story">
         <p class="large-wh">株式会社 ニセコ蒸溜所</p>
         <p class="small-wh">048-1511 北海道虻田郡ニセコ町ニセコ 478-15</p>
@@ -121,18 +173,23 @@
 
     <div class="parallax-content contact-content" id="contact-us">
         <div class="map">
-            <!-- <iframe id="myIframe" src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11700.610779136008!2d140.63078446977545!3d42.84850890000002!2m3!1f0!2f0!3f0!3m2! 1i1024! 2i768! 4f13.1! 3m3! 1m2! 1s0x5f0aa5b0a92fb72b % 3A0x5efc6b7159ddb507! 2z44OL44K744Kz6JK45rqc5omA! 5e0! 3m2! 1sen! 2sjp! 4v1619655202301! 5m2! 1sen! 2sjp "  style ="border : 0 ;" allowfullscreen =" " loading ="lazy "> </iframe> -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11700.610779136008!2d140.63078446977545!3d42.84850890000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0aa5b0a92fb72b%3A0x5efc6b7159ddb507!2z44OL44K744Kz6JK45rqc5omA!5e0!3m2!1sen!2sjp!4v1619655202301!5m2!1sen!2sjp" width="1250" height="700" style="border:0; filter:grayscale(70%);-webkit-filter:grayscale(100%) allowfullscreen="" loading="lazy"></iframe>
+            <iframe id="myIframe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11700.610779136008!2d140.63078446977545!3d42.84850890000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0aa5b0a92fb72b%3A0x5efc6b7159ddb507!2z44OL44K744Kz6JK45rqc5omA!5e0!3m2!1sen!2sjp!4v1619655202301!5m2!1sen!2sjp"
+                width="" height=""
+                style="border:0; filter:grayscale(70%);-webkit-filter:grayscale(100%) allowfullscreen="" loading="
+                lazy"></iframe>
         </div>
     </div>
 
     <footer>
         <img src="./images/logo_footer.png" width="100%" alt=""><br>
         <div class="social">
-            <a href="https://www.facebook.com/nisekodistillery2021" target="_blank" id="face" onmouseover="changeFaceSrc()"
-                onmouseout="returnDefaultFace()"><img src="./images/facebook.png" alt=""></a>
-            <a href="https://www.instagram.com/nisekodistillery_2021" target="_blank" id="insta" onmouseover="changeInstaSrc()"
-                onmouseout="returnDefaultInsta()"><img src="./images/insta.png" alt=""></a>
+            <a href="https://www.facebook.com/nisekodistillery2021" target="_blank" id="face"
+                onmouseover="changeFaceSrc()" onmouseout="returnDefaultFace()"><img src="./images/facebook.png"
+                    alt=""></a>
+            <a href="https://www.instagram.com/nisekodistillery_2021" target="_blank" id="insta"
+                onmouseover="changeInstaSrc()" onmouseout="returnDefaultInsta()"><img src="./images/insta.png"
+                    alt=""></a>
         </div>
         <br><span>©NISEKO DISTILLERY CO., LTD. ALL RIGHTS RESERVED.</span>
     </footer>
@@ -141,6 +198,7 @@
     <script src="common/js/vendor/bootstrap.min.js"></script>
     <script src="common/js/plugins.js"></script>
     <script src="common/js/main.js"></script>
+    <script src="https://pawelgrzybek.github.io/siema/assets/siema.min.js"></script>
     <script>
         function openCity(cityName) {
             var i;
@@ -154,6 +212,9 @@
 </body>
 
 </html>
+<script>
+
+</script>
 <script>
     function changeFaceSrc() {
         $('#face img').attr('src', './images/facebook_on.png')
@@ -171,6 +232,18 @@
 </script>
 <script>
 
+    function printSlideIndex() {
+    }
+
+    const mySiema = new Siema({
+        onInit: printSlideIndex,
+        onChange: printSlideIndex,
+    });
+
+    function currentSlideSp(index) {
+        mySiema.goTo(index - 1);
+    }
+
     $(document).scroll(function () { // remove "$"
         var w = Math.floor($(window).scrollTop());
         if (w <= $('#services').offset().top) {
@@ -180,18 +253,28 @@
         }
     });
 
+    if ($('#services').offset().top <= window.screen.height && $('#portfolio').offset().top <= window.screen.height) {
+        $('#services').animate({ 'opacity': '1' }, 1500)
+        $('#portfolio').animate({ 'opacity': '1' }, 1500)
+    }
+    else if ($('#services').offset().top <= window.screen.height) {
+        $('#services').animate({ 'opacity': '1' }, 1500)
+    }
+    if ($('.touch-slide').offset().top <= window.screen.height) {
+        $('.touch-slide').animate({ 'opacity': '1' }, 1500)
+    }
 
     $(document).scroll(function () { // remove "$"
         var w = Math.floor($(window).scrollTop());
-        if (w <= $('#services').offset().top) {
+        if (w <= $('#services').offset().top - 500) {
             $('#services').animate({ 'opacity': '1' }, 1500)
-        } else if (w <= $('#portfolio').offset().top) {
+        } else if (w <= $('#portfolio').offset().top - 500) {
             $('#portfolio').animate({ 'opacity': '1' }, 1500)
         }
-        else if (w <= $('#our-story').offset().top) {
+        else if (w <= $('#our-story').offset().top - 500) {
             $('#our-story').animate({ 'opacity': '1' }, 1500)
         }
-        else if (w <= $('.map').offset().top) {
+        else {
             $('.map').animate({ 'opacity': '1' }, 1500)
             $('footer').animate({ 'opacity': '1' }, 1500)
 
