@@ -281,6 +281,8 @@ img {
 .mySlides {
   display: none;
   opacity: 1;
+  width: 75%;
+  margin: auto;
 }
 
 
@@ -340,8 +342,8 @@ img {
 
 .column {
   float: left;
-  width: 11.34%;
-  margin: 6.4% 0.62% 0;
+  width: 8.505%;
+  margin: 4.8% 0.62% 0;
 }
 
 .demo {
@@ -354,8 +356,7 @@ img {
   transition: all 1s ease;
 }
 .slide {
-  margin-left: 6%;
-  margin-right: 5%;
+  margin-left: 16%;
   width: 100%;
 }
 .slide-row {
