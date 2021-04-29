@@ -280,7 +280,7 @@ img {
 }
 .mySlides {
   display: none;
-  opacity: 0.2;
+  opacity: 1;
 }
 
 
@@ -592,7 +592,7 @@ footer {
 footer img{
   width: 10.86vw;
 }
-footer a{
+footer span{
   color: #959595;
   font-family: tbchibirgothicplusk-pro;
   font-size: 0.859vw;
